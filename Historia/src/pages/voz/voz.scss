@@ -1,0 +1,80 @@
+
+@Keyframes crecerla {
+  0%{transform: scale(1)}
+50%{transform: scale(1.1)}
+100%{transform: scale(1)}
+
+}
+
+
+
+page-home {
+
+  p{
+    font-weight: bolder;
+    /*text-shadow: 2px 2px 2px black;*/
+    font-size: 20px;
+  }
+
+
+
+  h1{
+    text-shadow: -3px 3px 3px black;
+/*  font-family: gobCL;*/
+ /*   color: white;*/
+   /* font-weight: bolder;
+    text-shadow: 2px 2px 2px black;*/
+    font-size: 40px;
+    text-align: center;
+  }
+  ion-content,  .content-md{
+    /*background: #fff;*/
+    background: url(../../assets/splash.png);
+    background-repeat: repeat;
+    background-size: 90px;
+
+  }
+  #hablar:hover {
+    filter: brightness(1);
+    animation: none
+  }
+  #hablar {
+height: 400px;
+   /* animation: crecerla ease-in 1s infinite;*/
+    /*filter: invert(100);*/
+  }
+
+  .preguntame
+  {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+  }
+
+  .preguntame:hover
+  {
+
+    z-index: 0;
+  }
+
+
+
+  .voz{
+    &-div-icono{
+
+      text-align: center;
+/*      height: 100%;*/
+      display: flex;
+    }
+    &-icono{
+      font-size: 60vw;
+    }
+  }
+  .select-md
+  {
+    min-width:200px;
+  }
+
+
+
+}

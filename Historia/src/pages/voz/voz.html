@@ -1,0 +1,41 @@
+<!--
+<ion-header>
+  <ion-navbar>
+    <ion-title>Asistente por voz</ion-title>
+  </ion-navbar>
+</ion-header>
+-->
+
+<ion-content padding>
+  <!--<ion-item>
+    <ion-label>Voces</ion-label>
+    <ion-select [(ngModel)]="voces">
+      <ion-option value="spa-ESP,Monica">spa-ESP,Monica</ion-option>
+      <ion-option value="spa-ESP,Jorge">spa-ESP,Jorge</ion-option>
+      <ion-option value="spa-COL,Soledad">spa-COL,Soledad</ion-option>
+      <ion-option value="spa-COL,Carlos">spa-COL,Carlos</ion-option>
+      <ion-option value="spa-MEX,Angelica">spa-MEX,Angelica</ion-option>
+      <ion-option value="spa-MEX,Paulina">spa-MEX,Paulina</ion-option>
+      <ion-option value="spa-MEX,Juan">spa-MEX,Juan</ion-option>
+    </ion-select>
+  </ion-item>-->
+  <!--<h1>Preguntame!</h1>-->
+<div class="voz-div-icono">
+  <!--<p class="preguntame">Preguntame!</p>-->
+  <div style="width:100%;height: 400px" ><!--<div style="
+    background: rgba(0,0,0,0.6);
+    border: solid 1px;
+    border-radius: 50%;
+    width: max-content;
+    margin: auto;
+    padding: 50px;
+">-->
+    <img heigth="400" alt="micro" id="hablar" (click)="hablar(voces)" src="https://anywhere365.io/wspstorage/2018/10/Bot.svg"  style="width: 300px;height:400px"   alt="">
+
+  </div>
+</div>
+<p>{{entradaVoz}}</p>
+  <br>
+  <br>
+  <p><typing *ngIf="nuevaConsulta" [message]="salidaAsistente" [referenceSpeed]="50" [typo]="true"></typing></p>
+</ion-content>

@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Asistente por texto</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <input type="text" [(ngModel)]="entradaTexto">
+  <button ion-button (click)="hablar(entradaTexto)" >Enviar</button>
+  <br>
+  <b>Su respuesta es: </b> <typing *ngIf="nuevaConsulta" [message]="salidaBot" [referenceSpeed]="100" [typo]="false"></typing>
+</ion-content>
